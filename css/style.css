@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Cairo";
+    /* src: url("fonts/Tajawal\ Regular.ttf"); */
+    src: url("fonts/Cairo\ Regular\ 400.ttf");
+}
+body{
+    margin:0;
+    direction: rtl;
+    box-sizing: border-box;
+}
+*
+{   font-family: Cairo;
+    font-size: 14px;
+ }
+ header nav ul
+ {
+    margin: 0;
+ }
+header nav
+{
+    width:100%;
+    line-height: 55px;
+    background-color:#773e23;
+    text-align: center;
+}
+header nav ul li
+{
+  display: inline;
+}
+header nav ul li a
+{
+  padding:5px 20px 5px 20px;
+    border:1px solid #d48d4d;
+    color:#d48d4d;
+    margin:5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover
+{
+ color:black;
+    background-color:#d48d4d ;
+}
+header
+{
+    background-color: black;
+}
+header > img
+{     
+    width:100%;
+    height: 250px;
+}
+header >div
+{  position: absolute;
+    top:150px;
+    left: 30px;
+    background-color:#5e5858;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+header >div a
+{position: absolute;
+    top:40%;
+    left:25%;
+    color: white;
+    transform:rotate(-40deg);
+    text-decoration: none;
+    transition: all 2s;
+}
+header >div a:hover
+{
+color:red;
+transform: scale(1.4);
+}
+.class1
+{
+    display: none;
+}
+header >div a:hover .class1
+{
+display: block;
+ color:white;
+   
+    transform: scale(0.5);   
+}
+.main1
+{
+    display: flex;
+}
+main{
+    width: 60%;
+}
+aside
+{
+    width: 40%;
+    border:1px solid #5e5858;
+    border-radius: 10px;
+    margin:40px;
+    padding-right: 25px;
+    
+}
+aside div
+{
+    text-align: center;
+}
+aside input,aside textarea
+{
+    padding:5px;
+    border:1px solid #ccc;
+    margin:10px;
+    border-radius: 5px;
+    width:40%;
+    height: 40px;
+}
+aside textarea
+{
+ width:88%;
+height: 100px;  
+}
+aside .btn
+{
+    background-color: #d48d4d;
+    border:1px solid #d48d4d;
+    width:90%;
+    color:white;
+    transition: all 3s;
+}
+aside .btn:hover
+{
+    background-color: #773e23;
+    color:white;
+    transform: scale(.7);
+}
+.divmain
+{
+  display: flex;
+    padding: 30px 60px 0 0;
+}
+.divimage img
+{
+border-radius: 10px; 
+    width:130px;
+    height: 130px;
+}
+.divtext
+{
+ padding-right: 20px;
+   
+}
+.divtext h4
+{
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+.divtext .price
+{
+color:rgb(232, 151, 11);
+font-weight: bold;
+display: block;
+font-size: 14px;
+}
+.divtext span
+{
+    font-size: 12px;
+    color:#666;
+}
+.add{
+position: relative;
+width: 100px;
+}
+.add button
+{position:absolute;
+    bottom: 20px;
+    background-color:#773e23;
+    color:#fbfbfb;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 12px;
+    border:1px solid #d48d4d;
+}
+.add button:hover
+{
+    background-color:#59260c;
+    color:white;
+}
+@media (max-width:1000px) {
+    header nav ul li
+    {
+    display: block;
+    border-bottom:1px solid #d48d4d;
+    color:#d48d4d;
+    margin: 0px 5px;
+    text-align: right;
+    }
+    header nav ul li a
+    {  
+      border:none ;  
+    } 
+    header nav ul li a:hover
+    {  
+      border:none ;
+      background: none;
+      color:white;    
+    }  
+    header >div
+    {
+        display: none;
+    }
+    .main1
+{
+    flex-direction: column;
+}
+main{
+    width: 100%;
+}
+aside
+{
+    width: 95%;
+    margin:5px;
+    padding-right: 10px;
+}
+.divmain
+{
+    padding: 5px 10px 0 0;
+flex-wrap: wrap;
+}
+.divimage 
+{
+flex-basis: 30%;
+}
+.divtext
+{
+ padding-right: 5px;
+ flex-basis: 70%;
+}
+.divtext h4
+{
+    margin-bottom: 5px;
+}
+.divprice
+{
+    margin-right: 10px;
+    margin-top:35px;
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    height: 70%;
+    font-size: 14px;
+    
+}
+aside input,aside textarea
+{    width:90%;;
+}
+}

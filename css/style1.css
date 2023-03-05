@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Cairo";
+    /* src: url("fonts/Tajawal\ Regular.ttf"); */
+    src: url("fonts/Cairo\ Regular\ 400.ttf");
+}
+body{
+    margin:0;
+    direction: rtl;
+    box-sizing: border-box;
+}
+*
+{   font-family: Cairo;
+    font-size: 14px;
+ }
+ /* header */
+ 
+header nav
+{
+    width:100%;
+    line-height: 80px;
+    background-color:#773e23;
+    text-align: center;
+}
+header nav ul
+ {
+    margin: 0;
+ }
+header nav ul li
+{
+  display: inline;
+}
+header nav ul li a
+{
+  padding:5px 20px 5px 20px;
+    border:2px solid #d48d4d;
+    color:#d48d4d;
+    margin:5px;
+    border-radius: 5px 20px;
+    text-decoration: none;
+   transition:all 3s; 
+}
+header nav ul li a:hover
+{ color:black;
+    background-color:#d48d4d ;
+   
+    
+}
+header
+{
+    background-color: black;
+}
+header > img
+{     
+    width:100%;
+    height: 250px;
+}
+
+
+/* main and asidr*/
+.main1
+{
+    display: flex;
+    flex-direction:row;
+   
+}
+main{
+    width: 60%;
+}
+aside
+{
+    width: 40%;
+    border:1px solid #5e5858;
+    border-radius: 10px;
+    margin:40px;
+    padding-right: 25px;
+    
+}
+aside div
+{
+    text-align: center;
+}
+aside input,aside textarea
+{
+    padding:5px;
+    border:1px solid #ccc;
+    margin:10px;
+    border-radius: 5px;
+    width:40%;
+    height: 40px;
+}
+aside textarea
+{
+ width:88%;
+height: 100px;  
+}
+aside .btn
+{
+    background-color: #d48d4d;
+    border:1px solid #d48d4d;
+    width:90%;
+    color:white;
+    transition: all 3s;
+
+
+}
+aside .btn:hover
+{
+    background-color: #773e23;
+    color:white;
+}
+/**/
+.divmain
+{
+  display: flex;
+    padding: 30px 60px 0 0;
+}
+.divimage img
+{
+border-radius: 10px; 
+    width:130px;
+    height: 130px;
+}
+.divtext
+{
+ padding-right: 20px;
+   
+}
+.divtext h4
+{
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+.divtext .price
+{
+color:rgb(232, 151, 11);
+font-weight: bold;
+display: block;
+font-size: 14px;
+}
+.divtext span
+{
+    font-size: 12px;
+    color:#666;
+}
+.add{
+position: relative;
+width: 100px;
+}
+.add button
+{position:absolute;
+    bottom: 20px;
+    background-color:#773e23;
+    color:#fbfbfb;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 12px;
+    border:1px solid #d48d4d;
+}
+.add button:hover
+{
+    background-color:#59260c;
+    color:white;
+}
+/**/
+@media (max-width:1000px) {
+ header nav ul li
+ {
+ display: block;
+ border-bottom:1px solid #070504;
+ color:#d48d4d;
+ margin: 0px 5px;
+ text-align: right;
+ }
+ header nav ul li a
+ {  
+   border:none ;  
+ } 
+ header nav ul li a:hover
+ {  
+   border:none ;
+   background: none;
+   color:white;    
+ } 
+ .main1
+ {
+     flex-direction: column;
+ }
+ main{
+     width: 100%;
+ }
+ aside
+ {
+     width: 95%;
+     margin:5px;
+     padding-right: 10px;
+ }
+ aside input,aside textarea
+{    width:90%;;
+}
+.divmain
+{    padding: 5px 10px 0 0;
+flex-wrap: wrap;
+}
+.divimage 
+{
+flex-basis: 30%;
+}
+.divtext
+{
+ padding-right: 5px;
+ flex-basis: 60%;
+}
+.divtext h4
+{
+    margin-bottom: 5px;
+}
+.add
+{
+    margin-right: 10px;
+    margin-top:35px;
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    height: 70%;
+    right:60%;
+    font-size: 14px;
+    
+} 
+}
